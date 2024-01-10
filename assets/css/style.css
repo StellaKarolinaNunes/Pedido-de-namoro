@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url(../image/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+
+.container{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 100px;
+    position: relative; /* Adicione esta linha */
+}
+
+.content1 .nao {
+    position: absolute;
+    left: 0; /* Altere esta linha */
+    height: 50px;
+    width: 75px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background-color: red;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.content1 .sim {
+    position: absolute;
+    right: 0; /* Altere esta linha */
+    height: 50px;
+    width: 75px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background-color: rgb(59, 251, 11);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.sim:hover{
+    background-color: rgb(171, 228, 150);
+}
+
+span{
+    font-weight: bolder;
+    font-size: 18px;
+    color:#ef36a24b;
+}
+
+.title1{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:3%;
+    width: 100%;
+}
+
+.title1 h1{
+    color: #730707;
+}
+
+.content2{
+    display: none;
+}
+
+.content2 img{
+    height: 300px;
+    width: 320px;
+}
+#voltar-button {
+    position: fixed; /* Alterado para 'fixed' para que o botão permaneça fixo na tela */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #f80f0f74;
+    font-size: 25px;
+    margin-left: 10px;
+    bottom: 30%; /* Ajuste a distância do fundo conforme necessário */
+}
+
+  
