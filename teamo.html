@@ -1,96 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/teamo.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <title>Coração Animado</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #1a1a1a;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-        }
-
-        .te-amo {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 60px;
-            color: #fff;
-            margin-right: 100px; /* Adicionei margem direita para separar do coração */
-        }
-
-        .heart {
-            width: 100px;
-            height: 160px;
-            position: relative;
-            background-color: #E93D3D;
-            transform-origin: right bottom;
-            border-radius: 15px;
-            animation: heart 3s ease infinite alternate;
-        }
-
-        @keyframes heart {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(45deg);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-            100% {
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-                transform: rotate(45deg);
-            }
-        }
-
-        .heart:after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            transform-origin: left bottom;
-            background-color: #D62424;
-            position: absolute;
-            animation: heart_after 3s ease infinite alternate;
-        }
-
-        @keyframes heart_after {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(-90deg) translateY(100px);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-            100% {
-                transform: rotate(-90deg) translateY(100px);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="te-amo">Te Amo</div>
+        <br>
         <div class="heart"></div>
     </div>
 </body>
